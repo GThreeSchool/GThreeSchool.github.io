@@ -2,39 +2,111 @@
 <html>
 <head>
 	<title>G3 school</title>
-</head>
+</head><script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('83brhfp3uvee');</script>
+  
 <style type="text/css">
 	
 a.aboutt{
    text-decoration: none;
    position: fixed;
    top:15px;
-   right: 100px;
+   right: 80px;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 20px darkblue;
+
+
+}
+a.aboutt:hover{
+   text-decoration: none;
+   position: fixed;
+   top:15px;
+   right: 80px;
+  text-shadow: 1px 1px 2px   #000000, 0 0 25px  #28a7b0, 0 0 20px #00ecfc;
+
+
 }
 a.tutorialweb{
    text-decoration: none;
    position: fixed;
    top:15px;
-   right: 200px;
+   right: 150px;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 20px darkblue;
+
+}
+a.tutorialweb:hover{
+   text-decoration: none;
+   position: fixed;
+   top:15px;
+   right: 150px;
+   text-shadow: 1px 1px 2px   #000000, 0 0 25px  #28a7b0, 0 0 20px #00ecfc;
+
 }
 a.tutorial{
    text-decoration: none;
    position: fixed;
    top:15px;
    right: 325px;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 20px darkblue;
+}
+a.tutorial:hover{
+   text-decoration: none;
+   position: fixed;
+   top:15px;
+   right: 325px;
+   text-shadow: 1px 1px 2px   #000000, 0 0 25px  #28a7b0, 0 0 20px #00ecfc;
 }
 a.classes{
    text-decoration: none;
    position: fixed;
    top:15px;
    right: 425px;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 20px darkblue;
+}
+a.classes:hover{
+   text-decoration: none;
+   position: fixed;
+   top:15px;
+   right: 425px;
+  text-shadow: 1px 1px 2px   #000000, 0 0 25px  #28a7b0, 0 0 20px #00ecfc;
 }
 a.home1{
    text-decoration: none;
    position: fixed;
    top:15px;
    right:525px;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 20px darkblue;
 }
+a.home1:hover{
+   text-decoration: none;
+   position: fixed;
+   top:15px;
+   right:525px;
+   text-shadow: 1px 1px 2px   #000000, 0 0 25px  #28a7b0, 0 0 20px #00ecfc;
+}
+
 .logog3{
 
 	position: fixed;
@@ -63,10 +135,6 @@ right: 920px;
 }
 .t{
   border: 5px solid #ffffff;
-
-
-
-
 }
 	
 	.t1{;
@@ -74,11 +142,7 @@ right: 920px;
 		left: 25%;
 		color: black;
 		size: 2.9em;
-		font-size: 40px;
-
-
-
-	}
+		font-size: 40px;}
 	
 .yy {
   background-color: lightgrey;
@@ -104,37 +168,17 @@ right: 920px;
 
 		top: 1100px;
 		left: 400px;
-
-
-
-
-
-
-
 }
 .q3{position: absolute;
 
 		top: 1600px;
 		left: 400px;
 
-
-
-
-
-
-
 }
 .q4{position: absolute;
 
 		top: 2100px;
 		left: 400px;
-
-
-
-
-
-
-
 }
 .eee{
 position: absolute;
@@ -143,11 +187,6 @@ left: 700px;
 color: white;
 text-align: center;
 font-size: 1.4em;
-
-
-
-
-
 }
 .eee1{
 position: absolute;
@@ -156,10 +195,6 @@ left: 690px;
 color: white;
 text-align: center;
 font-size: 1.4em;
-
-
-
-
 
 }
 .eee2{
@@ -193,10 +228,6 @@ font-size: 1.4em;
 	width:200px; 
 	height:200px;
 
-
-
-
-
 }
 .hes{
 		
@@ -204,10 +235,6 @@ font-size: 1.4em;
 		top: 0;
 	right: 300px;
 			color: white;
-
-
-
-
 }
 .scroll-down .trigger-menu-wrapper {
   transform: translate3d(0, -100%, 0);
@@ -233,11 +260,13 @@ font-size: 1.4em;
     right: 600px;
     font-size: 30px;
 
-
-
-
-
-
+}
+.eeeeee{position:fixed; 
+  right: 20px;
+  top: 40px;
+  width: 75px;
+  height:75px;
+  animation-delay: 4s;
 }
 </style>
 <header>
@@ -253,7 +282,8 @@ font-size: 1.4em;
 <a class="home1" href="index.html" ><p><CENTER><font face="Times New Roman" color="#40ede1"><b>HOME</b></font></CENTER></p></a>
 
 
-<a  href="suggestion.htm"  class="tutorialweb"><p><CENTER><font face="Times New Roman" color="#40ede1"><b>SUGGESTION</b></font></CENTER></p></a>
+<a  href="suggestion.htm"  class="tutorialweb"><p><CENTER><font face="Times New Roman" color="#40ede1"><b>RECOMMENDATION</b></font></CENTER></p></a>
+
 <a class="logog3" href="https://deathshotsabee.wixsite.com/my-site" ><img src="https://fontmeme.com/permalink/210520/ad16f16dfada392b27ae1adb19b1c405.png" alt="facon-font" border="0" width="160px" height="40px" ></a>
 
 </header>
