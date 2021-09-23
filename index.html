@@ -253,7 +253,29 @@ text-shadow: 1px 1px 2px #ffffff, 0 0 25px #b53198, 0 0 20px #ff007b;
 
 </div>
 
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDmLe4nUMLjSVZfiVUXMSIfHArZqN4ti2A",
+    authDomain: "z-campany.firebaseapp.com",
+    projectId: "z-campany",
+    storageBucket: "z-campany.appspot.com",
+    messagingSenderId: "408922928288",
+    appId: "1:408922928288:web:e8abe667cd0e445f86c5c5",
+    measurementId: "G-VE7BFZV5QD"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 
 
 
